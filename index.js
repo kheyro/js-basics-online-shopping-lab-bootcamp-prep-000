@@ -38,7 +38,7 @@ function viewCart() {
   } else if (item.length > 2) {
     sumUp = items.join(', ');
   }
-  return `In your cart, you have ${sumUp}.`;
+  return console.log(`In your cart, you have ${sumUp}.`);
 }
 addToCart("lemons");
 

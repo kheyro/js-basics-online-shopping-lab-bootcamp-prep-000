@@ -46,7 +46,7 @@ function viewCart() {
 
 function total() {
   // write your code here
-  let total = 0;
+  var total = 0;
   for(let i = 0;i < cart.length; i++) {
     for (var key in cart[i]) {
       console.log(cart[i][key]);

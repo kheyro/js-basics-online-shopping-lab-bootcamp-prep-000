@@ -41,7 +41,7 @@ function viewCart() {
     sumUp = `${items.join(', ')} and ${last}`;
   }
 
-  console.log(`In your cart, you have ${sumUp}.`);
+  return console.log(`In your cart, you have ${sumUp}.`);
 }
 
 function total() {

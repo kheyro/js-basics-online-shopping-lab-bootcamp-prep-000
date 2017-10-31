@@ -45,6 +45,26 @@ function viewCart() {
   return console.log(`In your cart, you have ${sumUp}.`);
 }
 
+addToCart("orange");
+addToCart("pear");
+addToCart("quince");
+
+const orangeCost = getCart()[0]["orange"];
+const pearCost = getCart()[1]["pear"];
+const quinceCost = getCart()[2]["quince"];
+
+viewCart();
+
+expect(console.log).toHaveBeenCalledWith(
+  `In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`
+);
+
+addToCart("rhubarb");
+
+const rhubarbCost = getCart()[3]["rhubarb"];
+
+viewCart();
+
 function total() {
   // write your code here
   let total = 0;

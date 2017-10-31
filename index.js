@@ -53,6 +53,7 @@ addToCart("watermelon");
 addToCart("yams");
 removeFromCart("watermelon");
 removeFromCart("yams");
+removeFromCart("yams");
 
 function placeOrder(cardNumber) {
   // write your code here

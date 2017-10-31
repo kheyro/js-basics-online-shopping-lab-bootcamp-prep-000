@@ -26,7 +26,9 @@ function viewCart() {
   let sumUp = "";
 
   for(let i = 0; i < cart.length; i++) {
-    items[i] = `${cart[i].itemName} at $${itemPrice}`;
+    for (let key in cart[i]) {
+      items[i] = `${key} at $${cart[i][key]}`;
+    }
   }
 
   if (items.length === 1) {

@@ -17,7 +17,8 @@ function addToCart(itemName) {
   console.log(cart);
   return cart;
 }
-
+addToCart("ss");
+addToCart("qq");
 function viewCart() {
   // write your code here
   if (!cart.length) {

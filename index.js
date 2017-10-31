@@ -39,8 +39,8 @@ function viewCart() {
     sumUp = items.join(' and ');
   } else if (items.length > 2) {
     last = items.slice(0, -1);
-    prev = items.pop();
-    sumUp = `${prev.join(", ")} and ${last}`;
+    prev = items.pop().join(', ');
+    sumUp = `${prev} and ${last}`;
   }
   return console.log(`In your cart, you have ${sumUp}.`);
 }

@@ -38,9 +38,10 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  console.log(cart.hasOwnProperty(item));
+  
   for(let i = 0;i < cart.length; i++) {
     if(cart[i].hasOwnProperty(item)) {
+      console.log(cart.hasOwnProperty(item));
       delete cart.item;
       return setCart(cart);
     }
@@ -52,5 +53,6 @@ removeFromCart("sss");
 
 function placeOrder(cardNumber) {
   // write your code here
+
 
 }

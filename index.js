@@ -40,9 +40,13 @@ function viewCart() {
   }
   return console.log(`In your cart, you have ${sumUp}.`);
 }
-addToCart("lemons");
 
-const lemonsCost = getCart()[0]["lemons"];
+addToCart("mango");
+addToCart("nuts");
+
+const mangoCost = getCart()[0]["mango"];
+const nutsCost = getCart()[1]["nuts"];
+
 viewCart();
 
 function total() {

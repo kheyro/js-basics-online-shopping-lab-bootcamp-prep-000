@@ -40,7 +40,7 @@ function viewCart() {
   } else if (items.length > 2) {
     last = items.slice(0, -1);
     prev = items.pop();
-    sumUp = items.join(', ');
+    sumUp = `${prev.join(', ')} and ${last}`;
   }
   return console.log(`In your cart, you have ${sumUp}.`);
 }

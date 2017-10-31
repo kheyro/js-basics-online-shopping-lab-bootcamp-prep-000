@@ -32,7 +32,7 @@ function viewCart() {
   if (items.length === 1) {
     sumUp = items[0];
   } else if (items.length === 2) {
-
+    sumUp = items.join(' and ');
   } else if (item.length > 2) {
 
   }
@@ -72,3 +72,4 @@ function placeOrder(cardNumber) {
   }
 
 }
+  

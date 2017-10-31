@@ -46,7 +46,6 @@ function removeFromCart(item) {
     return "That item is not in your cart.";
   }
 }
-function removeFromCart();
 
 
 function placeOrder(cardNumber) {

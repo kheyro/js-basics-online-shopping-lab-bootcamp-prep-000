@@ -24,7 +24,6 @@ function viewCart() {
 
   const items = [];
   let sumUp = "";
-  let prev;
   let last = "";
 
   for(let i = 0; i < cart.length; i++) {
@@ -40,8 +39,7 @@ function viewCart() {
   } else if (items.length > 2) {
     last = items.slice(0, -1);
     items.pop();
-    prev = items.join(', ');
-    sumUp = `${prev} and ${last}`;
+    sumUp = `${items.join(', ')} and ${last}`;
   }
   return console.log(`In your cart, you have ${sumUp}.`);
 }

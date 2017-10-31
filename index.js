@@ -40,7 +40,11 @@ function viewCart() {
   }
   return `In your cart, you have ${sumUp}.`;
 }
+addToCart("lemons");
 
+const lemonsCost = getCart()[0]["lemons"];
+
+viewCart();
 function total() {
   // write your code here
   let total = 0;

@@ -23,11 +23,19 @@ function viewCart() {
   }
 
   const items = [];
+  let item = "";
   
   for(let i = 0; i < cart.length; i++) {
     items[i] = `you have ${cart[i].itemName} at $${itemPrice}`;
   }
-  
+
+  if (items.length === 1) {
+    
+  } else if (items.length === 2) {
+    
+  } else if (item.length > 2) {
+    
+  }
   return items.join(', ');
 }
 

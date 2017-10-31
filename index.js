@@ -17,7 +17,7 @@ function addToCart(itemName) {
  return cart;
 }
 
-function viewCart() {
+function viewCart(cart) {
   // write your code here
   if (!cart.length) {
     console.log("Your shopping cart is empty");
@@ -38,6 +38,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  
 }
 
 function placeOrder(cardNumber) {

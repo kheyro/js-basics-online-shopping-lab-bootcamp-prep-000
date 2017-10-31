@@ -19,13 +19,17 @@ function addToCart(itemName) {
 
 function viewCart() {
   // write your code here
-  const items = [];
-
-  for(let i = 0; i < cart.length; i++) {
-    items[i] = "you have ${cart[i].itemName at $${itemPrice}}";
+  if (!cart.length) {
+    return "Your shopping cart is empty";
   }
 
-  return items.join(',');
+  // const items = [];
+  // 
+  // for(let i = 0; i < cart.length; i++) {
+  //   items[i] = "you have ${cart[i].itemName at $${itemPrice}}";
+  // }
+  // 
+  // return items.join(',');
 }
 
 function total() {

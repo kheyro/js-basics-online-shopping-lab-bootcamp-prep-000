@@ -1,4 +1,4 @@
-var cart = ["sss"];
+var cart = [{"sss":22}];
 
 function getCart() {
  return cart;

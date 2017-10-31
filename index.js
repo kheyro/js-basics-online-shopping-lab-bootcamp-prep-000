@@ -38,9 +38,10 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  cart = getCart();
   if(cart.hasOwnProperty(item)) {
     delete cart.item;
-    return cart;
+    return setCart(cart);
   } else {
     return "That item is not in your cart.";
   }

@@ -49,10 +49,10 @@ function total() {
   var total = 0;
   for(let i = 0;i < cart.length; i++) {
     for (var key in cart[i]) {
-      console.log(cart[i][key]);
       total += parseFloat(cart[i][key]);
     }
   }
+  console.log(total);
   return total;
 }
 

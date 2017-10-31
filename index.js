@@ -79,7 +79,7 @@ function placeOrder(cardNumber) {
 
 addToCart("zucchini");
 
-const cartTotal = total();
+//const cartTotal = total();
 const cardNumber = Math.floor(Math.random() * 100000000);
 
 placeOrder(cardNumber);

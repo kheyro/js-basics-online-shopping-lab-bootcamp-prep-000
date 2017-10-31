@@ -34,9 +34,9 @@ function viewCart() {
   } else if (items.length === 2) {
     sumUp = items.join(' and ');
   } else if (item.length > 2) {
-
+    sumUp = items.join(', ');
   }
-  return `In your cart, you have ${sumUp}`;
+  return `In your cart, you have ${sumUp}.`;
 }
 
 function total() {

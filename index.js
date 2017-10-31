@@ -48,6 +48,12 @@ function removeFromCart(item) {
   return "That item is not in your cart.";
 }
 
+addToCart("vanilla");
+addToCart("watermelon");
+addToCart("yams");
+removeFromCart("watermelon");
+removeFromCart("yams");
+
 function placeOrder(cardNumber) {
   // write your code here
 

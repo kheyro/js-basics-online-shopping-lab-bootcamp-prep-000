@@ -41,13 +41,16 @@ function viewCart() {
   return console.log(`In your cart, you have ${sumUp}.`);
 }
 
-addToCart("mango");
-addToCart("nuts");
+addToCart("orange");
+addToCart("pear");
+addToCart("quince");
 
-const mangoCost = getCart()[0]["mango"];
-const nutsCost = getCart()[1]["nuts"];
+const orangeCost = getCart()[0]["orange"];
+const pearCost = getCart()[1]["pear"];
+const quinceCost = getCart()[2]["quince"];
 
 viewCart();
+
 
 function total() {
   // write your code here

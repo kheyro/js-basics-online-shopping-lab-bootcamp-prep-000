@@ -44,16 +44,9 @@ function removeFromCart(item) {
       return cart;
     }
   }
-  console.log("sss");
+
   return "That item is not in your cart.";
 }
-
-addToCart("vanilla");
-addToCart("watermelon");
-addToCart("yams");
-removeFromCart("watermelon");
-removeFromCart("yams");
-removeFromCart("yams");
 
 function placeOrder(cardNumber) {
   // write your code here

@@ -44,7 +44,7 @@ function removeFromCart(item) {
       return cart;
     }
   }
-console.log("sss");
+  console.log("sss");
   return "That item is not in your cart.";
 }
 

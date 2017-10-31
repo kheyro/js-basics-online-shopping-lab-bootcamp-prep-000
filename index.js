@@ -21,8 +21,8 @@ function viewCart(cart) {
   // write your code here
   if (!cart.length) {
     return "Your shopping cart is empty";
-  } 
-  
+  }
+
   const items = [];
 
   for(let i = 0; i < cart.length; i++) {

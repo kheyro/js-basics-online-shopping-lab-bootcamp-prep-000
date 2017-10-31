@@ -75,3 +75,10 @@ function placeOrder(cardNumber) {
     return console.log("Sorry, we don't have a credit card on file for you.");
   }
 }
+
+addToCart("zucchini");
+
+const cartTotal = total();
+const cardNumber = Math.floor(Math.random() * 100000000);
+
+placeOrder(cardNumber);

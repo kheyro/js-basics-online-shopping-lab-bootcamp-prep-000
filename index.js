@@ -52,7 +52,7 @@ function total() {
       total += parseFloat(cart[i][key]);
     }
   }
-  console.log(total);
+  console.log('10');
   return total;
 }
 

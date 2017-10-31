@@ -39,11 +39,13 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   console.log(cart.hasOwnProperty(item));
-  if(cart.hasOwnProperty(item)) {
-    delete cart.item;
-    return setCart(cart);
-  } else {
-    return "That item is not in your cart.";
+  for(let i = 0;i < cart.length; i++) {
+    if(cart.hasOwnProperty(item)) {
+      delete cart.item;
+      return setCart(cart);
+    } else {
+      return "That item is not in your cart.";
+    }
   }
 }
 removeFromCart("sss");

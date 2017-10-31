@@ -19,7 +19,7 @@ function addToCart(itemName) {
 
 function viewCart() {
   // write your code here
-  if (!cart.length) {
+  if (!getCart.length) {
     return "Your shopping cart is empty";
   }
 

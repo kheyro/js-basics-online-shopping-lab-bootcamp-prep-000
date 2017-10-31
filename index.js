@@ -32,7 +32,7 @@ function viewCart() {
   //
   // return items.join(',');
 }
-
+viewCart();
 function total() {
   // write your code here
   let total = 0;

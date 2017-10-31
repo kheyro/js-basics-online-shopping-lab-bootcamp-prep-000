@@ -42,7 +42,7 @@ function viewCart() {
 //   }
 //   return total;
 // }
-// 
+//
 // function removeFromCart(item) {
 //   // write your code here
 //   for(let i = 0;i < cart.length; i++) {
@@ -51,10 +51,10 @@ function viewCart() {
 //       return cart;
 //     }
 //   }
-// 
+//
 //   return "That item is not in your cart.";
 // }
-// 
+//
 // function placeOrder(cardNumber) {
 //   // write your code here
 //   if(cardNumber) {
@@ -63,5 +63,5 @@ function viewCart() {
 //   } else {
 //     return "Sorry, we don't have a credit card on file for you.";
 //   }
-// 
+//
 // }

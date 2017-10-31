@@ -22,13 +22,13 @@ function viewCart() {
     return console.log("Your shopping cart is empty.")
   }
 
-  // const items = [];
-  //
-  // for(let i = 0; i < cart.length; i++) {
-  //   items[i] = `you have ${cart[i].itemName} at $${itemPrice}`;
-  // }
-  //
-  // return items.join(',');
+  const items = [];
+  
+  for(let i = 0; i < cart.length; i++) {
+    items[i] = `you have ${cart[i].itemName} at $${itemPrice}`;
+  }
+  
+  return items.join(', ');
 }
 
 function total() {

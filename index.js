@@ -23,20 +23,20 @@ function viewCart() {
   }
 
   const items = [];
-  let item = "";
-  
+  let sumUp = "";
+
   for(let i = 0; i < cart.length; i++) {
-    items[i] = `you have ${cart[i].itemName} at $${itemPrice}`;
+    items[i] = `${cart[i].itemName} at $${itemPrice}`;
   }
 
   if (items.length === 1) {
-    
+    sumUp = 
   } else if (items.length === 2) {
-    
+
   } else if (item.length > 2) {
-    
+
   }
-  return items.join(', ');
+  return `In your cart, you have ${sumUp}`;
 }
 
 function total() {

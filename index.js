@@ -20,7 +20,7 @@ function addToCart(itemName) {
 function viewCart() {
   console.log("Your shopping cart is empty");
   if (!cart.length) {
-    console.log("Your shopping cart is empty");
+    return console.log("Your shopping cart is empty");
   }
 
   // const items = [];

@@ -49,7 +49,7 @@ function total() {
   let total = 0;
   for(let i = 0;i < cart.length; i++) {
     for (var key in cart[i]) {
-      total += parsefloat(cart[i][key]);
+      total += parseFloat(cart[i][key]);
     }
   }
   return total;

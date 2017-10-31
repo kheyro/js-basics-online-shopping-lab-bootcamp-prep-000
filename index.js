@@ -38,7 +38,7 @@ function viewCart() {
   } else if (items.length === 2) {
     sumUp = items.join(' and ');
   } else if (items.length > 2) {
-    last = 
+    last = items.slice(0, -1);
     prev = items.pop();
     sumUp = items.join(', ');
   }

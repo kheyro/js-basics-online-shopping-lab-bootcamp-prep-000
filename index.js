@@ -40,6 +40,7 @@ function viewCart() {
     last = items.pop();
     sumUp = `${items.join(', ')} and ${last}`;
   }
+  
   return console.log(`In your cart, you have ${sumUp}.`);
 }
 

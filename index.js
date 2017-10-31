@@ -38,6 +38,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  console.log(cart);
   if(cart.hasOwnProperty(item)) {
     delete cart.item;
     return setCart(cart);

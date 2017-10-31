@@ -46,7 +46,7 @@ function removeFromCart(item) {
     return "That item is not in your cart.";
   }
 }
-removeFromCart("ee");
+removeFromCart("sss");
 
 function placeOrder(cardNumber) {
   // write your code here

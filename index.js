@@ -24,8 +24,8 @@ function viewCart() {
 
   const items = [];
   let sumUp = "";
-  const prev = [];
-  const last = [];
+  let prev = [];
+  let last = "";
 
   for(let i = 0; i < cart.length; i++) {
     for (let key in cart[i]) {

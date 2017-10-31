@@ -20,9 +20,9 @@ function addToCart(item) {
 function viewCart(cart) {
   // write your code here
   const items = [];
-  
+
   for(let i = 0; i < cart.length; i++) {
-    items[i] = "you have ${cart[i].itemName at $${itemPrice}}"; 
+    items[i] = "you have ${cart[i].itemName at $${itemPrice}}";
   }
 
   return items.join(',');

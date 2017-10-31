@@ -81,6 +81,58 @@ describe("viewCart()", function() {
 
     expect(console.log).toHaveBeenCalledWith("Your shopping cart is empty.")
   });
+
+  it("correctly prints a one-item cart", function() {
+    addToCart("lemons");
+
+    const lemonsCost = getCart()[0]["lemons"];
+
+    viewCart();
+
+    expect(console.log).toHaveBeenCalledWith(
+      `In your cart, you have lemons at $${lemonsCost}.`
+    );
+  });
+
+  it("correctly prints a two-item cart", function() {
+    addToCart("mango");
+    addToCart("nuts");
+
+    const mangoCost = getCart()[0]["mango"];
+    const nutsCost = getCart()[1]["nuts"];
+
+    viewCart();
+
+    expect(console.log).toHaveBeenCalledWith(
+      `In your cart, you have mango at $${mangoCost} and nuts at $${nutsCost}.`
+    );
+  });
+
+  it("correctly prints a three-or-more-item cart", function() {
+    addToCart("orange");
+    addToCart("pear");
+    addToCart("quince");
+
+    const orangeCost = getCart()[0]["orange"];
+    const pearCost = getCart()[1]["pear"];
+    const quinceCost = getCart()[2]["quince"];
+
+    viewCart();
+
+    expect(console.log).toHaveBeenCalledWith(
+      `In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, and quince at $${quinceCost}.`
+    );
+
+    addToCart("rhubarb");
+
+    const rhubarbCost = getCart()[3]["rhubarb"];
+
+    viewCart();
+
+    expect(console.log).toHaveBeenCalledWith(
+      `In your cart, you have orange at $${orangeCost}, pear at $${pearCost}, quince at $${quinceCost}, and rhubarb at $${rhubarbCost}.`
+    );
+  });
 });
 
 describe("total()", function() {

@@ -43,10 +43,10 @@ function removeFromCart(item) {
     if(cart[i].hasOwnProperty(item)) {
       delete cart.item;
       return setCart(cart);
-    } else {
-      return "That item is not in your cart.";
     }
   }
+
+  return "That item is not in your cart.";
 }
 removeFromCart("sss");
 

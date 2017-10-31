@@ -30,7 +30,7 @@ function viewCart() {
   }
 
   if (items.length === 1) {
-    sumUp = 
+    sumUp = items[0];
   } else if (items.length === 2) {
 
   } else if (item.length > 2) {
